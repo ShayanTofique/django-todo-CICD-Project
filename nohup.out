@@ -1,0 +1,64 @@
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+todos.Todo: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 1 issue (0 silenced).
+[18/Feb/2024 14:19:14] "GET / HTTP/1.1" 302 0
+[18/Feb/2024 14:19:14] "GET /todos HTTP/1.1" 301 0
+[18/Feb/2024 14:19:14] "GET /todos/ HTTP/1.1" 200 3515
+[18/Feb/2024 14:19:15] "GET /static/css/style.css HTTP/1.1" 200 225
+Not Found: /favicon.ico
+[18/Feb/2024 14:19:15] "GET /favicon.ico HTTP/1.1" 404 2575
+Performing system checks...
+
+February 18, 2024 - 14:19:07
+Django version 5.0.2, using settings 'todoApp.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+todos.Todo: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 1 issue (0 silenced).
+[18/Feb/2024 15:31:36] code 400, message Bad request version ('\x02h2\x08http/1.1Di\x00\x05\x00\x03\x02h2\x00')
+[18/Feb/2024 15:31:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Feb/2024 15:31:36] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+[18/Feb/2024 15:31:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Feb/2024 15:31:36] "GET / HTTP/1.1" 302 0
+[18/Feb/2024 15:31:37] "GET /todos HTTP/1.1" 301 0
+[18/Feb/2024 15:31:37] "GET /todos/ HTTP/1.1" 200 3515
+[18/Feb/2024 15:31:37] "GET /static/css/style.css HTTP/1.1" 200 225
+Not Found: /favicon.ico
+[18/Feb/2024 15:31:38] "GET /favicon.ico HTTP/1.1" 404 2574
+[18/Feb/2024 15:31:42] "POST /todos/add/ HTTP/1.1" 302 0
+[18/Feb/2024 15:31:42] code 400, message Bad request version ('ð\x92\x83\x90v')
+[18/Feb/2024 15:31:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Feb/2024 15:31:42] "GET /todos/ HTTP/1.1" 200 4093
+[18/Feb/2024 15:31:43] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00')
+[18/Feb/2024 15:31:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Feb/2024 15:31:45] "GET /todos/22/delete HTTP/1.1" 302 0
+[18/Feb/2024 15:31:45] "GET /todos/ HTTP/1.1" 200 3515
+[18/Feb/2024 15:32:07] "POST /todos/add/ HTTP/1.1" 302 0
+[18/Feb/2024 15:32:08] "GET /todos/ HTTP/1.1" 200 4101
+[18/Feb/2024 15:32:15] "GET /todos/23/delete HTTP/1.1" 302 0
+[18/Feb/2024 15:32:15] "GET /todos/ HTTP/1.1" 200 3515
+[18/Feb/2024 15:32:35] "POST /todos/add/ HTTP/1.1" 302 0
+[18/Feb/2024 15:32:35] "GET /todos/ HTTP/1.1" 200 4111
+[18/Feb/2024 15:32:38] "POST /todos/24/update HTTP/1.1" 302 0
+[18/Feb/2024 15:32:38] "GET /todos/ HTTP/1.1" 200 4148
+[18/Feb/2024 15:33:02] "GET /todos/24/delete HTTP/1.1" 302 0
+[18/Feb/2024 15:33:02] "GET /todos/ HTTP/1.1" 200 3515
+Performing system checks...
+
+February 18, 2024 - 15:31:12
+Django version 5.0.2, using settings 'todoApp.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
