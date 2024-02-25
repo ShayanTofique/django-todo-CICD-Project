@@ -34,6 +34,8 @@ This project showcases the automated deployment of a ToDo application using Dock
 
 5. **Access ToDo Application**: Access the ToDo application by navigating to `http://localhost:8000` in your web browser.
 
+![local host](https://github.com/ShayanTofique/django-todo-CICD-Project/assets/93067602/9f74349e-612e-4ce5-afdc-1a42af668380)
+
 ## Deployment Steps
 1. **Deploying on AWS EC2**:
     - Launch an AWS EC2 instance and configure security groups to allow inbound traffic on port 5000.
