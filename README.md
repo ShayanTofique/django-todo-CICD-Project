@@ -1,38 +1,61 @@
-# django-todo
-A simple todo app built with django
+# Automated Deployment of ToDo Application with Full CI/CD Pipeline
 
-![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
-### Setup
-To get this repository, run the following command inside your git enabled terminal
-```bash
-$ git clone https://github.com/shreys7/django-todo.git
-```
-You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
+## Overview
+This project showcases the automated deployment of a ToDo application using Docker containers and a full CI/CD pipeline with Jenkins. The application is orchestrated with Kubernetes for scalability and efficient resource management.
 
-Once you have downloaded django, go to the cloned repo directory and run the following command
+## Technologies Used
+- AWS EC2
+- Docker
+- Jenkins
+- Docker Compose
+- Kubernetes
 
-```bash
-$ python manage.py makemigrations
-```
+## Project Setup
+1. **Local Environment Setup**: Before deploying the application, ensure you have the following prerequisites installed on your local system:
+    - Docker: [Installation Instructions](https://docs.docker.com/get-docker/)
+    - Docker Compose: [Installation Instructions](https://docs.docker.com/compose/install/)
+    - Python (if applicable): [Installation Instructions](https://www.python.org/downloads/)
 
-This will create all the migrations file (database migrations) required to run this App.
+2. **Clone Repository**: Clone the repository to your local machine.
+    ```bash
+    git clone <repository_url>
+    cd todo-application
+    ```
 
-Now, to apply this migrations run the following command
-```bash
-$ python manage.py migrate
-```
+3. **Install Requirements**: Install the required dependencies for the ToDo application.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
-```bash
-$ python manage.py createsuperuser
-```
+4. **Run Application Locally**: Run the ToDo application locally for testing.
+    ```bash
+    python manage.py runserver
+    ```
 
-That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
+5. **Access ToDo Application**: Access the ToDo application by navigating to `http://localhost:8000` in your web browser.
 
-```bash
-$ python manage.py runserver
-```
+## Deployment Steps
+1. **Deploying on AWS EC2**:
+    - Launch an AWS EC2 instance and configure security groups to allow inbound traffic on port 5000.
+    - SSH into the EC2 instance and clone the repository.
+    - Install Docker and Docker Compose on the EC2 instance.
+    - Build and run the Docker container for the ToDo application.
 
-Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
+2. **Setting Up Jenkins Pipeline**:
+    - Install Jenkins on a separate server or local machine.
+    - Configure Jenkins to connect to the repository and trigger builds upon code commits.
+    - Create Jenkins jobs to build, test, and deploy the ToDo application using Docker Compose.
 
-Cheers and Happy Coding :)
+3. **Implementing Kubernetes Orchestration**:
+    - Set up a Kubernetes cluster using a platform like AWS EKS or Minikube.
+    - Define Kubernetes manifests for deploying the ToDo application, including deployments, services, and ingress resources.
+
+## Contributing
+Contributions are welcome! Please feel free to submit pull requests or raise issues if you encounter any problems or have suggestions for improvements.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+This README file provides a detailed guide for setting up the project environment, deploying the application locally, and outlining the steps followed throughout the project, including deployment on AWS EC2, setting up Jenkins pipeline, and implementing Kubernetes orchestration.
