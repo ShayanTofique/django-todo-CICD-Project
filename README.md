@@ -49,13 +49,3 @@ This project showcases the automated deployment of a ToDo application using Dock
 3. **Implementing Kubernetes Orchestration**:
     - Set up a Kubernetes cluster using a platform like AWS EKS or Minikube.
     - Define Kubernetes manifests for deploying the ToDo application, including deployments, services, and ingress resources.
-
-## Contributing
-Contributions are welcome! Please feel free to submit pull requests or raise issues if you encounter any problems or have suggestions for improvements.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-This README file provides a detailed guide for setting up the project environment, deploying the application locally, and outlining the steps followed throughout the project, including deployment on AWS EC2, setting up Jenkins pipeline, and implementing Kubernetes orchestration.
