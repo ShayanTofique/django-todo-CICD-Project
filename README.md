@@ -63,6 +63,9 @@ sudo docker run -p 8000:8000 -d todo-app
 
 This command starts a Docker container named `todo-app`, detached (`-d`) from the terminal, and maps port 8000 of the container to port 8000 on the host machine, allowing access to the ToDo application.
 
+![Screenshot from 2024-02-18 15-23-54](https://github.com/ShayanTofique/django-todo-CICD-Project/assets/93067602/ee354045-a39a-4ed9-b1b0-c9c6f209d648)
+
+
 2. **Setting Up Jenkins Pipeline**:
 
 To establish a Continuous Integration/Continuous Deployment (CI/CD) pipeline for the ToDo application, Jenkins is utilized. Follow the steps below to install Jenkins and configure the pipeline:
@@ -188,7 +191,11 @@ To implement CI/CD for your project using Docker Compose, follow these steps:
      ```
    - This command forces recreation of containers, rebuilds the Docker image, and starts the services.
 
+ ![Screenshot from 2024-02-19 13-00-26](https://github.com/ShayanTofique/django-todo-CICD-Project/assets/93067602/28f3a877-c428-4673-801b-dfbf51b4fc3a)
+
 By incorporating Docker Compose into the project, you can easily manage the deployment of the ToDo application and automate the CI/CD pipeline for efficient development and deployment workflows.
+
+[CICD.webm](https://github.com/ShayanTofique/django-todo-CICD-Project/assets/93067602/a420104f-1404-4951-9217-ea6d63de55da)
 
 ### Setting Up Kubernetes for ToDo Application
 
@@ -205,6 +212,8 @@ To leverage Kubernetes for managing the deployment and scaling of the ToDo appli
    ```bash
    docker push <image>
    ```
+
+![Screenshot from 2024-03-12 15-54-34](https://github.com/ShayanTofique/django-todo-CICD-Project/assets/93067602/41261e22-b73b-46cf-9fb6-221e8da0e0ba)
 
 #### 4. Install Kubernetes Tools
 
@@ -231,6 +240,8 @@ kubectl get pods -o wide
    curl http://<ip-address>:8000
    ```
 
+![Screenshot from 2024-03-12 16-15-46](https://github.com/ShayanTofique/django-todo-CICD-Project/assets/93067602/d860908b-4bb9-4159-9aaa-bb598651e90b)
+
 ### Note:
 
 While pods serve as the basic building blocks of Kubernetes, they are not typically deployed directly in production. Kubernetes employs higher-level abstractions like deployments and stateful sets for production-grade deployments.
@@ -252,6 +263,8 @@ Check the status of the pod to ensure it's running successfully:
 ```bash
 kubectl get pods
 ```
+
+
 
 #### AutoHealing and AutoScaling
 
@@ -309,6 +322,10 @@ Access the ToDo application using the IP address of the Service. You can either 
   ```bash
   curl -L http://<minikube_ip>:<node_port>
   ```
+
+![Screenshot from 2024-03-15 00-30-28](https://github.com/ShayanTofique/django-todo-CICD-Project/assets/93067602/8a8e9dda-0a22-418e-bf15-48560f9a71e0)
+
+![Screenshot from 2024-03-15 00-32-17](https://github.com/ShayanTofique/django-todo-CICD-Project/assets/93067602/9777cca3-8923-4126-91e6-f6432b4913cc)
 
 #### Advantages of Kubernetes Service
 
